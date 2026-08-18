@@ -74,3 +74,10 @@ switcher script lives somewhere non-standard, just copy it manually into
 - Review `home/` before your first commit. Some KDE files (like
   `kwinoutputconfig.json`) can contain machine-specific display info
   you may not want to carry to another machine — delete if irrelevant.
+
+## Additional setup
+
+`eww` (ElKowars wacky widgets) is not included in this repo since it's a
+compiled binary. Install it separately:
+- Via your package manager if available, or
+- Build from source: https://github.com/elkowar/eww
