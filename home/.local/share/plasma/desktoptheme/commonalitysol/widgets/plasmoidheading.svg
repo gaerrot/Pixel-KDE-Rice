@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="43"
+   height="18"
+   viewBox="0 0 43 18"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="plasmoidheading.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="9.5104167"
+     inkscape:cx="23.500548"
+     inkscape:cy="22.974808"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:none;stroke-width:6;stroke-linecap:square"
+       id="header-center"
+       width="6"
+       height="6"
+       x="6"
+       y="6" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#header-center"
+       id="header-right"
+       transform="translate(6)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#header-center"
+       id="header-left"
+       transform="translate(-6)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#header-center"
+       id="header-top"
+       transform="translate(0,-6)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#header-center"
+       id="header-topright"
+       transform="translate(6,-6)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#header-center"
+       id="header-topleft"
+       transform="translate(-6,-6)" />
+    <g
+       id="header-bottom"
+       transform="translate(-4,-4)">
+      <rect
+         style="fill:none;stroke:none;stroke-width:6;stroke-linecap:square"
+         id="rect1"
+         width="6"
+         height="6"
+         x="10"
+         y="16" />
+      <rect
+         style="fill:#dce5fa;fill-opacity:1;stroke:none;stroke-width:5.99998;stroke-linecap:square"
+         id="rect2"
+         width="6"
+         height="1"
+         x="10"
+         y="21" />
+      <rect
+         style="fill:#5e6574;fill-opacity:1;stroke:none;stroke-width:5.99998;stroke-linecap:square"
+         id="rect3"
+         width="6"
+         height="1"
+         x="10"
+         y="20" />
+    </g>
+    <g
+       id="header-bottomright"
+       transform="translate(2,-4)">
+      <rect
+         style="fill:none;stroke:none;stroke-width:6;stroke-linecap:square"
+         id="rect4"
+         width="6"
+         height="6"
+         x="10"
+         y="16" />
+      <rect
+         style="fill:#dce5fa;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:square"
+         id="rect5"
+         width="2"
+         height="1"
+         x="10"
+         y="21" />
+      <rect
+         style="fill:#5e6574;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:square"
+         id="rect6"
+         width="2"
+         height="1"
+         x="10"
+         y="20" />
+    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#header-bottomright"
+       id="header-bottomleft"
+       transform="matrix(-1,0,0,1,18,0)" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:square"
+       id="footer-center"
+       width="6"
+       height="6"
+       x="31"
+       y="6" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#footer-center"
+       id="footer-bottom"
+       transform="translate(0,6)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#footer-center"
+       id="footer-bottomright"
+       transform="translate(6,6)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#footer-center"
+       id="footer-bottomleft"
+       transform="translate(-6,6)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#footer-center"
+       id="footer-right"
+       transform="translate(6)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#footer-center"
+       id="footer-left"
+       transform="translate(-6)" />
+    <g
+       id="footer-top"
+       transform="translate(-4,-4)">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:square"
+         id="rect14"
+         width="6"
+         height="6"
+         x="35"
+         y="4" />
+      <rect
+         style="fill:#5e6574;fill-opacity:1;stroke:none;stroke-width:5.99998;stroke-linecap:square"
+         id="rect12"
+         width="6"
+         height="1"
+         x="35"
+         y="4" />
+      <rect
+         style="fill:#dce5fa;fill-opacity:1;stroke:none;stroke-width:5.99998;stroke-linecap:square"
+         id="rect13"
+         width="6"
+         height="1"
+         x="35"
+         y="5" />
+    </g>
+    <g
+       id="footer-topright"
+       transform="translate(2,-4)">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:square"
+         id="rect15"
+         width="6"
+         height="6"
+         x="35"
+         y="4" />
+      <rect
+         style="fill:#5e6574;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:square"
+         id="rect16"
+         width="2"
+         height="1"
+         x="35"
+         y="4" />
+      <rect
+         style="fill:#dce5fa;fill-opacity:1;stroke:none;stroke-width:5.99998;stroke-linecap:square"
+         id="rect17"
+         width="2"
+         height="1"
+         x="35"
+         y="5" />
+    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#footer-topright"
+       id="footer-topleft"
+       transform="matrix(-1,0,0,1,68,0)" />
+  </g>
+</svg>

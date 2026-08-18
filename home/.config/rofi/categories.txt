@@ -1,0 +1,31 @@
+Games|Balatro
+Games|Steam
+Games|Steam Big Picture
+Games|Lutris
+Games|KMines
+Games|KPatience
+Games|KSudoku
+Games|KMahjongg
+Dev|kitty
+Dev|Konsole
+Dev|Vim
+Dev|Kate
+Media|Elisa
+Media|Haruna Media Player
+Media|Gwenview
+Media|Okular
+Office|LibreOffice Writer
+Office|LibreOffice Calc
+Office|LibreOffice Impress
+Office|LibreOffice Draw
+Office|KCalc
+Utilities|Ark
+Utilities|Spectacle
+Utilities|KRDC
+Utilities|Klipper
+Utilities|Konversation
+Utilities|NeoChat
+Custom|LED Visualizer
+Custom|Wallpaper Picker
+Utilities|Nemo
+Custom|Spotify Resync

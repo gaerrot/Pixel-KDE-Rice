@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+WALLPAPER="${1:?Usage: feh-wal /path/to/wallpaper.jpg}"
+feh --bg-scale "$WALLPAPER"
+wal -i "$WALLPAPER"
+sleep 0.3
+
+~/.config/polybar/launch.sh
+$HOME/.local/bin/sync-qt5ct-highlight.sh >> /tmp/pywal-sync.log 2>&1
+$HOME/.local/bin/sync-kde-accent.sh >> /tmp/pywal-sync.log 2>&1
+$HOME/.local/bin/sync-i3-urgent.sh >> /tmp/pywal-sync.log 2>&1

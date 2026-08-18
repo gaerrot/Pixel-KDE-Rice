@@ -1,0 +1,29 @@
+{
+    "checksum": "60a6c9d6327d0c5b0556d3ae01968824",
+    "wallpaper": "/home/garrett/Pictures/wallpapers/wallpaper6.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#141430",
+        "foreground": "#c4c4cb",
+        "cursor": "#c4c4cb"
+    },
+    "colors": {
+        "color0": "#141430",
+        "color1": "#5C68CF",
+        "color2": "#9B65A9",
+        "color3": "#9F74CD",
+        "color4": "#6F8EE4",
+        "color5": "#EBA7AF",
+        "color6": "#A199DD",
+        "color7": "#c4c4cb",
+        "color8": "#63637a",
+        "color9": "#5C68CF",
+        "color10": "#9B65A9",
+        "color11": "#9F74CD",
+        "color12": "#6F8EE4",
+        "color13": "#EBA7AF",
+        "color14": "#A199DD",
+        "color15": "#c4c4cb"
+    }
+}

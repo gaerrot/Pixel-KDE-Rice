@@ -1,0 +1,194 @@
+; ============================================================
+; POLYBAR CONFIG — retro terminal look, gapped/floating modules
+; i3wm | Gruvbox dark palette | Departure Mono
+; ============================================================
+
+include-file = ~/.cache/wal/colors-polybar.ini
+
+[bar/bar]
+width = 100%
+height = 30pt
+offset-x = 0%
+offset-y = 10pt
+radius = 4
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 2pt
+border-color = ${colors.background-alt}
+
+padding-left = 1
+padding-right = 1
+module-margin = 1
+
+font-0 = "Departure Mono:size=11;3"
+font-1 = "Symbols Nerd Font Mono:size=11;2"
+
+modules-left = i3 xwindow
+modules-center = date
+modules-right = music-prev music music-next volume brightness network bluetooth battery tray launcher power
+
+cursor-click = pointer
+enable-ipc = true
+
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+pin-workspaces = true
+
+label-focused = %index%
+label-focused-background = ${colors.foreground}
+label-focused-foreground = ${colors.background}
+label-focused-padding = 2
+
+label-unfocused = %index%
+label-unfocused-foreground = ${colors.foreground-alt}
+label-unfocused-padding = 2
+
+label-visible = %index%
+label-visible-foreground = ${colors.foreground}
+label-visible-padding = 2
+
+label-urgent = %index%
+label-urgent-background = ${colors.alert}
+label-urgent-foreground = ${colors.background}
+label-urgent-padding = 2
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:50:...%
+label-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 1
+date = %H:%M
+date-alt = %Y-%m-%d %H:%M:%S
+label = %date%
+label-foreground = ${colors.primary}
+
+[module/volume]
+type = custom/script
+exec = ~/.config/polybar/scripts/volume.sh
+interval = 1
+click-left = wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+scroll-up = wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 5%+
+scroll-down = wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+format = <label>
+label = %output%
+label-foreground = ${colors.foreground}
+
+[module/brightness]
+type = custom/script
+exec = ~/.config/polybar/scripts/brightness.sh
+interval = 1
+click-left = ~/.config/polybar/scripts/brightness.sh up
+click-right = ~/.config/polybar/scripts/brightness.sh down
+scroll-up = ~/.config/polybar/scripts/brightness.sh up
+scroll-down = ~/.config/polybar/scripts/brightness.sh down
+format = <label>
+label = %output%
+label-foreground = ${colors.foreground}
+
+[module/network]
+type = internal/network
+interface = wlp229s0
+interval = 3.0
+
+format-connected = <label-connected>
+label-connected = %{A1:~/.config/polybar/scripts/wifi-menu.sh:}  %essid%%{A}
+label-connected-foreground = ${colors.secondary}
+
+format-disconnected = <label-disconnected>
+label-disconnected =  disconnected
+label-disconnected-foreground = ${colors.disabled}
+
+[module/music-prev]
+type = custom/text
+format = 
+format-foreground = ${colors.foreground-alt}
+click-left = playerctl previous
+
+[module/music]
+type = custom/script
+exec = ~/.config/polybar/scripts/music.sh
+interval = 0.3
+click-left = playerctl play-pause
+click-right = playerctl next
+click-middle = playerctl previous
+scroll-up = playerctl volume 0.05+
+scroll-down = playerctl volume 0.05-
+format = <label>
+label = %output%
+label-foreground = ${colors.foreground}
+label-maxlen = 30
+
+[module/music-next]
+type = custom/text
+format = 
+format-foreground = ${colors.foreground-alt}
+click-left = playerctl next
+
+[module/bluetooth]
+type = custom/script
+exec = ~/.config/polybar/scripts/bluetooth.sh
+interval = 1
+click-left = ~/.config/polybar/scripts/bluetooth.sh toggle
+click-right = ~/.config/polybar/scripts/bluetooth-menu.sh
+format = <label>
+label = %output%
+label-foreground = ${colors.foreground}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+poll-interval = 5
+full-at = 99
+
+format-charging = <label-charging>
+label-charging =  %percentage%%
+format-charging-foreground = ${colors.secondary}
+
+format-discharging = <ramp-capacity> <label-discharging>
+label-discharging = %percentage%%
+format-discharging-foreground = ${colors.foreground}
+
+format-full = <ramp-capacity> <label-full>
+label-full = %percentage%%
+format-full-foreground = ${colors.secondary}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+[module/power]
+type = custom/text
+format = 
+format-foreground = ${colors.alert}
+click-left = ~/.config/polybar/scripts/power-menu.sh
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = true
+
+[module/tray]
+type = internal/tray
+tray-spacing = 8px
+tray-size = 66%
+
+[module/launcher]
+type = custom/text
+format = 
+format-foreground = ${colors.foreground}
+click-left = APP_MENU_DROPDOWN=1 ~/.local/bin/app-menu.sh
+

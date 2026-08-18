@@ -1,0 +1,18 @@
+# collector run log
+.collect-log.txt
+
+# spicetify can cache large compiled assets - keep only config/prefs
+home/.config/spicetify/CustomApps
+home/.config/spicetify/Extensions/*.bak
+home/.config/spicetify/spotify-backup
+
+# kitty/rofi/polybar sometimes leave lock or socket files
+*.lock
+*.sock
+
+# never commit history caches, just current state
+home/.cache/wal/history
+
+# OS/editor cruft
+.DS_Store
+*.swp

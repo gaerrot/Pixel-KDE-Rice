@@ -1,0 +1,20 @@
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
+
+#window {
+    border: 2px;
+    border-radius: 12px;
+    border-color: @selected-normal-background;
+    background-color: @background;
+}
+
+configuration {
+    font: "Departure Mono 12";
+}
+#scrollbar {
+    margin: 0px 0px 0px 8px;
+    width: 6px;
+    handle-color: @selected-normal-background;
+    background-color: @normal-background;
+    border: 0;
+    padding: 0;
+}
